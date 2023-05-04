@@ -336,6 +336,17 @@
             ></a>
           </div>
         </div>
+        <div>
+          <p class="submit">ZAPISZ SIĘ DO NEWSLETTERA</p>
+          <form name="submit-form" novalidate class="modal-form">
+            <input class="footer-input" type="email" name="email" placeholder="E-mail" required />
+            <button class="button-sign-in" type="sumbit">
+              <div class="p-button-sign-in">Zapisz się<svg width="24" height="24" viewBox="0 0 32 32">
+                <use href="./images/icons.svg#icon-icon-send-1"></use>
+              </svg></div>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -347,6 +358,57 @@
             </svg>
           </div>
         </button>
+        <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
+        <form>
+          <label>
+            <p class="p-modal">Imię</p>
+            <div class="input">
+              <svg width="12" height="12" viewBox="0 0 32 32">
+                <use href="./images/icons.svg#icon-Vector"></use>
+                <input type="text" name="user-name" />
+              </svg>
+            </div>
+          </label>
+          <label>
+            <p class="p-modal">Telefon</p>
+            <div class="input">
+              <svg width="12" height="12" viewBox="0 0 32 32">
+                <use href="./images/icons.svg#icon-Vector-1"></use>
+                <input type="number" name="user-phone" />
+              </svg>
+            </div>
+          </label>
+          <label>
+            <p class="p-modal">Email</p>
+            <div class="input">
+              <svg width="12" height="12" viewBox="0 0 32 32">
+                <use href="./images/icons.svg#icon-Vector-2"></use>
+                <input type="email" name="user-email" />
+              </svg>
+            </div>
+          </label>
+          <label class="p-modal">
+            <p class="p-commentary">Komentarz</p>
+            <textarea
+              class="p-textarea"
+              name="feedback"
+              rows="5"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </label>
+          <div class="checkbox">
+            <div class="checkbox-control">
+              <input type="checkbox" id="check" name="agreement" value="1" class="checkbox-input" />
+              <label class="checkbox-label" for="check">
+                <p class="p-agreement">
+                  Oświadczam iż akceptuję <a href="./" class="p-agreement">Regulamin</a> i
+                  <a href="./" class="p-agreement">Politykę Prywatności.</a>
+                </p>
+              </label>
+            </div>
+          </div>
+          <button class="modal-buttom" type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
