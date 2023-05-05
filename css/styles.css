@@ -613,7 +613,7 @@ ul {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  transition-property: color, border-color;
+  transition-property: color, border-color, fill;
 }
 
 .footer-input:focus,
@@ -661,7 +661,7 @@ ul {
   margin: 10px 24px 10px 42px;
   align-items: center;
   justify-content: space-between;
-  transition-property: color, background-color;
+  transition-property: fill, color, background-color;
 }
 
 .p-button-sign-in:hover,
@@ -817,8 +817,6 @@ label {
   letter-spacing: 0.06em;
   text-align: center;
   color: #ffffff;
-  justify-content: space-between;
-  display: inline-flex;
 }
 
 .modal-header {
