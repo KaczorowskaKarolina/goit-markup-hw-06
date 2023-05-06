@@ -634,13 +634,13 @@ ul {
   border: 1px solid;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-    transition-duration: 250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-sign-in {
   position: relative;
-    width: 200px;
+  width: 200px;
   height: 50px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -722,14 +722,12 @@ ul {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  padding: 0;
-  transition-property: background-color;
+  padding: 5px;
+  transition-property: background-color, fill;
 }
 
 .close-icon {
@@ -737,6 +735,7 @@ ul {
   background-color: transparent;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 50%;
   transition-property: fill, background-color;
 }
