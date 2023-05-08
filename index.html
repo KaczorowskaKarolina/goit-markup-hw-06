@@ -361,57 +361,61 @@
           </div>
         </button>
 
-        <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
+        <header class="modal-header">Zostaw swoje dane w formularzu poniżej</header>
 
         <form>
-          <p class="p-modal">
-            <label>
-              Imię
-              <div class="input">
-                <svg width="12" height="12" viewBox="0 0 32 32">
-                  <use href="./images/icons.svg#icon-Vector"></use>
-                  <input type="text" name="user-name" />
-                </svg>
-              </div>
-            </label>
-          </p>
+          <p class="p-modal">Imię</p>
+          <label class="input">
+            <svg width="12" height="12" viewBox="0 0 32 32">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+            <input type="text" name="user-name"
+          /></label>
 
-          <p class="p-modal">
-            <label>
-              Telefon
-              <div class="input">
-                <svg width="12" height="12" viewBox="0 0 32 32">
-                  <use href="./images/icons.svg#icon-Vector-1"></use>
-                  <input type="number" name="user-phone" />
-                </svg>
-              </div>
-            </label>
-          </p>
+          <p class="p-modal">Telefon</p>
+          <label class="input">
+            <svg width="13" height="13" viewBox="0 0 32 32">
+              <use href="./images/icons.svg#icon-Vector-1"></use>
+            </svg>
+            <input type="number" name="user-phone"
+          /></label>
 
-          <p class="p-modal">
-            <label>
-              Email
-              <div class="input">
-                <svg width="12" height="12" viewBox="0 0 32 32">
-                  <use href="./images/icons.svg#icon-Vector-2"></use>
-                  <input type="email" name="user-email" />
-                </svg>
-              </div>
-            </label>
-          </p>
+          <p class="p-modal">Email</p>
+          <label class="input">
+            <svg width="15" height="12" viewBox="0 0 32 32">
+              <use href="./images/icons.svg#icon-Vector-2"></use>
+            </svg>
+            <input type="email" name="user-email"
+          /></label>
 
-          <p class="p-commentary">
-            <label class="p-modal">
-              Komentarz
-              <textarea
-                class="p-textarea"
-                name="feedback"
-                rows="5"
-                placeholder="Wprowadź tekst"
-              ></textarea>
-            </label>
-          </p>
+          <p class="p-modal">Komentarz</p>
+          <label>
+            <textarea
+              class="p-textarea"
+              type="text"
+              name="feedback"
+              rows="5"
+              hight="120"
+              placeholder="Wprowadź tekst"
+            >
+            </textarea>
+          </label>
 
+          <div class="checkbox-box">
+            <input type="checkbox" />
+
+            <span class="p-agreement"
+              >Oświadczam iż akceptuję <a href="./" class="p-agreement">Regulamin</a> i
+              <a href="./" class="p-agreement">Politykę Prywatności.</a>
+            </span>
+
+            <div class="button-box">
+              <button class="modal-buttom" type="submit">Wyślij</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- <form>
           <div class="checkbox">
             <div class="checkbox-control">
               <input type="checkbox" id="check" name="agreement" value="1" class="checkbox-input" />
@@ -423,8 +427,7 @@
               </label>
             </div>
           </div>
-          <button class="modal-buttom" type="submit">Wyślij</button>
-        </form>
+        </form> -->
       </div>
     </div>
     <script src="./js/modal.js"></script>
