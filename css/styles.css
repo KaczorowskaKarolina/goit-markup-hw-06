@@ -760,10 +760,8 @@ ul {
   margin-bottom: 2px;
 }
 
-label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.modal-icon {
+  position:absolute top 50%;
 }
 
 input,
@@ -779,19 +777,20 @@ textarea:focus {
   outline: none;
 }
 
-.input {
+.input-box {
+  position: relative;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
 }
 
-.input:focus-within,
-.p-textarea:focus-within {
+.input-box:focus-within,
+.modal-textarea:focus-within {
   border-color: #2196f3;
   fill: #2196f3;
 }
 
-.p-modal {
+.label-modal {
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
@@ -802,24 +801,34 @@ textarea:focus {
   margin-top: 10px;
 }
 
-.p-textarea {
+.modal-textarea .input-box{
+
   font-family: Roboto;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  height: 120px;
-  padding: 12px 16px;
   border-radius: 4px;
   color: var(--highlight-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 textarea {
+   font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
   resize: none;
+  width: 495px;
+  height: 120px;
+  position: relative;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-right: 40px;
 }
 
 .modal-buttom {
-  position: absolute;
+  position: relative;
   width: 200px;
   height: 50px;
   background: #2196f3;
@@ -837,18 +846,19 @@ textarea {
   margin-top: 40px;
 }
 
-.p-agreement {
+.modal-agreement {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .checkbox-box {
   position: absolute;
-  display: block;
   margin-top: 20px;
   margin-bottom: 40px;
   justify-items: center;
@@ -858,6 +868,7 @@ textarea {
   display: flex;
   justify-content: center;
 }
+
 /* 
 
 .checkbox-control {

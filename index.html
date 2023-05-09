@@ -364,49 +364,50 @@
         <header class="modal-header">Zostaw swoje dane w formularzu poniżej</header>
 
         <form>
-          <p class="p-modal">Imię</p>
-          <label class="input">
-            <svg width="12" height="12" viewBox="0 0 32 32">
+
+          <label for="username"><p class="label-modal">Imię</p></label>
+          <div class="input-box">
+             <svg class="modal-icon" width="12" height="12" viewBox="0 0 32 32">
               <use href="./images/icons.svg#icon-Vector"></use>
             </svg>
-            <input type="text" name="user-name"
-          /></label>
-
-          <p class="p-modal">Telefon</p>
-          <label class="input">
+            <input type="text" name="user-name" id="username" />
+          </div>
+          
+          <label for="userphone"><p class="label-modal">Telefon</p></label>
+          <div class="input-box">
             <svg width="13" height="13" viewBox="0 0 32 32">
               <use href="./images/icons.svg#icon-Vector-1"></use>
             </svg>
-            <input type="number" name="user-phone"
-          /></label>
+            <input type="number" name="user-phone" id="userphone"
+          /></div>
 
-          <p class="p-modal">Email</p>
-          <label class="input">
+          <label for="useremail"><p class="label-modal">Email</p></label>
+          <div class="input-box">
             <svg width="15" height="12" viewBox="0 0 32 32">
               <use href="./images/icons.svg#icon-Vector-2"></use>
             </svg>
-            <input type="email" name="user-email"
-          /></label>
+            <input type="email" name="user-email" id="useremail"
+          /></div>
 
-          <p class="p-modal">Komentarz</p>
-          <label>
+          <label for="textarea"><p class="label-modal">Komentarz</p></label>
+          
             <textarea
-              class="p-textarea"
+              class="modal-textarea"
               type="text"
               name="feedback"
               rows="5"
               hight="120"
               placeholder="Wprowadź tekst"
-            >
-            </textarea>
-          </label>
+              id="textarea"
+            ></textarea>
+          
 
           <div class="checkbox-box">
             <input type="checkbox" />
 
-            <span class="p-agreement"
-              >Oświadczam iż akceptuję <a href="./" class="p-agreement">Regulamin</a> i
-              <a href="./" class="p-agreement">Politykę Prywatności.</a>
+            <span class="modal-agreement"
+              >Oświadczam iż akceptuję <a href="./" class="modal-agreement">Regulamin</a> i
+              <a href="./" class="modal-agreement">Politykę Prywatności.</a>
             </span>
 
             <div class="button-box">
