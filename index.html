@@ -364,71 +364,72 @@
         <header class="modal-header">Zostaw swoje dane w formularzu poniżej</header>
 
         <form>
-
           <label for="username"><p class="label-modal">Imię</p></label>
           <div class="input-box">
-             <svg class="modal-icon" width="12" height="12" viewBox="0 0 32 32">
+            <svg class="modal-icon" width="12" height="12" viewBox="0 0 32 32">
               <use href="./images/icons.svg#icon-Vector"></use>
             </svg>
             <input type="text" name="user-name" id="username" />
           </div>
-          
+
           <label for="userphone"><p class="label-modal">Telefon</p></label>
           <div class="input-box">
-            <svg width="13" height="13" viewBox="0 0 32 32">
+            <svg class="modal-icon" width="13" height="13" viewBox="0 0 32 32">
               <use href="./images/icons.svg#icon-Vector-1"></use>
             </svg>
-            <input type="number" name="user-phone" id="userphone"
-          /></div>
+            <input type="number" name="user-phone" id="userphone" />
+          </div>
 
           <label for="useremail"><p class="label-modal">Email</p></label>
           <div class="input-box">
-            <svg width="15" height="12" viewBox="0 0 32 32">
+            <svg class="modal-icon" width="15" height="12" viewBox="0 0 32 32">
               <use href="./images/icons.svg#icon-Vector-2"></use>
             </svg>
-            <input type="email" name="user-email" id="useremail"
-          /></div>
+            <input type="email" name="user-email" id="useremail" />
+          </div>
 
           <label for="textarea"><p class="label-modal">Komentarz</p></label>
-          
-            <textarea
-              class="modal-textarea"
-              type="text"
-              name="feedback"
-              rows="5"
-              hight="120"
-              placeholder="Wprowadź tekst"
-              id="textarea"
-            ></textarea>
-          
+
+          <textarea
+            class="modal-textarea"
+            type="text"
+            name="feedback"
+            rows="5"
+            hight="120"
+            placeholder="Wprowadź tekst"
+            id="textarea"
+          ></textarea>
 
           <div class="checkbox-box">
-            <input type="checkbox" />
-
-            <span class="modal-agreement"
-              >Oświadczam iż akceptuję <a href="./" class="modal-agreement">Regulamin</a> i
+            <label class="form-control checkbox">
+              <span class="form-control_input checkbox_input">
+                <input type="checkbox" name="checkbox" />
+                <span class="input_control">
+                  <svg
+                    width="16"
+                    height="15"
+                    viewBox="0 0 42 32"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width=".64"
+                      d="m6.263 15.205-.22-.21-3.307 3.132 11.651 11.114L38.864 5.89l-3.285-3.134-21.192 20.197-8.124-7.75z"
+                    />
+                  </svg>
+                </span>
+              </span>
+              Oświadczam iż akceptuję <a href="./" class="modal-agreement">Regulamin</a> i
               <a href="./" class="modal-agreement">Politykę Prywatności.</a>
-            </span>
+            </label>
+          </div>
 
-            <div class="button-box">
-              <button class="modal-buttom" type="submit">Wyślij</button>
-            </div>
+          <div class="button-box">
+            <button class="modal-buttom" type="submit">Wyślij</button>
           </div>
         </form>
-
-        <!-- <form>
-          <div class="checkbox">
-            <div class="checkbox-control">
-              <input type="checkbox" id="check" name="agreement" value="1" class="checkbox-input" />
-              <label class="checkbox-label" for="check">
-                <p class="p-agreement">
-                  Oświadczam iż akceptuję <a href="./" class="p-agreement">Regulamin</a> i
-                  <a href="./" class="p-agreement">Politykę Prywatności.</a>
-                </p>
-              </label>
-            </div>
-          </div>
-        </form> -->
       </div>
     </div>
     <script src="./js/modal.js"></script>
