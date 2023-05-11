@@ -400,30 +400,17 @@
             id="textarea"
           ></textarea>
 
-          <div class="checkbox-box">
-            <label class="form-control checkbox">
-              <span class="form-control_input checkbox_input">
-                <input type="checkbox" name="checkbox" />
-                <span class="input_control">
-                  <svg
-                    width="16"
-                    height="15"
-                    viewBox="0 0 42 32"
-                    aria-hidden="true"
-                    focusable="false"
-                  >
-                    <path
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width=".64"
-                      d="m6.263 15.205-.22-.21-3.307 3.132 11.651 11.114L38.864 5.89l-3.285-3.134-21.192 20.197-8.124-7.75z"
-                    />
-                  </svg>
-                </span>
-              </span>
-              Oświadczam iż akceptuję <a href="./" class="modal-agreement">Regulamin</a> i
-              <a href="./" class="modal-agreement">Politykę Prywatności.</a>
-            </label>
+          <div class="checkbox">
+            <div class="chceckbox_control">
+              <input type="checkbox" id="check" name="check" value="1" class="checkbox_input" />
+              <svg class="checkbox-icon" width="16" height="15" viewBox="0 0 42 32">
+                <use href="./images/icons.svg#icon-Vector-3"></use>
+              </svg>
+              <label class="chceckbox_label" for="check">
+                Oświadczam iż akceptuję <a href="./" class="modal-agreement">Regulamin</a> i
+                <a href="./" class="modal-agreement">Politykę Prywatności.</a>
+              </label>
+            </div>
           </div>
 
           <div class="button-box">

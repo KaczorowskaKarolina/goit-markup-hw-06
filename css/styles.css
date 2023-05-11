@@ -870,6 +870,84 @@ textarea {
 
 /* CUSTOM CHECKBOX */
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-icon {
+  fill: #ffffff;
+  border-radius: 2px;
+  width: 16px;
+  height: 15px;
+  background-color: #2196f3;
+}
+
+.chceckbox_control {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex: 0 0 auto;
+  border-radius: 2px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox_input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.checkbox_label {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  dispaly: block;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.checkbox_label:hover {
+  border-color: none;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.checkbox_label::after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.checkbox_input:checked + .checkbox_label {
+  border-color: #2196f3;
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+
+.checkbox_input:checked + .checkbox_label::after {
+  border-color: #ffffff;
+}
+
+/* .checkbox_input {
+  position: relative;
+}
+
 .checkbox-box {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -878,6 +956,8 @@ textarea {
 }
 
 .checkbox {
+  position: absolute;
+
   .input_control {
     border-radius: 2px;
     color: var(--highlight-color);
@@ -886,6 +966,8 @@ textarea {
 }
 
 .input_control svg {
+  border: 1px solid #000000;
+  border-radius: 1px;;
   width: 15px;
   transform: scale(0);
   transition-duration: 250ms;
@@ -894,7 +976,83 @@ textarea {
 
 input:checked + .input_control svg {
   transform: scale(1);
+} */
+
+/* $brand: #0080d3;
+$grey-25: #e6e6e6;
+$grey-5: #fcfcfc;
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
+
+.form-container {
+ 
+  height: 15px;
+width: 16px;
+  background-color: #ffffff;
+  border: 1px solid #212121;
+}
+
+/* HTML5 Boilerplate accessible hidden styles */
+/*.promoted-input-checkbox {
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; margin: -1px; 
+  overflow: hidden; 
+  padding: 0; 
+  position: absolute; 
+  width: 1px;
+}
+
+.promoted-checkbox {
+  input:checked + label > svg {
+    // Firefox doesn't render svg's that is loading with the use tag if its been set to display: none and then toggled to display: block, so you have to use tricks like this to get it to render again:
+    height: 24px;
+    animation: draw-checkbox ease-in-out 0.2s forwards;
+  }
+  
+  label:active::after {
+    background-color: $grey-25;
+  }
+  
+  label {
+    color: $brand;
+    line-height: 40px;
+    cursor: pointer;
+    position: relative;
+    &:after {
+      content: "";
+      height: 40px;
+      width: 40px;
+      margin-right: 1rem;
+      float: left;
+      border: 2px solid $brand;
+      border-radius: 3px;
+      transition: 0.15s all ease-out;      
+    }
+  }
+  svg {
+    stroke: $brand;
+    stroke-width: 2px;
+    height: 0; //Firefox fix
+    width: 24px;
+    position: absolute;
+    left: -48px;
+    top: -4px;
+    stroke-dasharray: 33; //Firefox fix
+  }
+}
+
+@keyframes draw-checkbox {
+  0% {
+    stroke-dashoffset: 33;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+} */
+
 /*   PORTFOLIO    */
 
 .portfolio-button {
