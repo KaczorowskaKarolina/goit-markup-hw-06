@@ -202,7 +202,7 @@ nav {
 
 .button:hover,
 .button:focus {
-  color: #000000;
+  color: var(--secondary-color);
   background-color: var(--highlight-color);
   line-height: 1.87;
   font-style: normal;
@@ -364,7 +364,6 @@ nav {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  /* justify-content: space-between; */
 }
 
 ul {
@@ -668,8 +667,8 @@ ul {
 
 .p-button-sign-in:hover,
 .p-button-sign-in:focus {
-  color: #000000;
-  fill: #000000;
+  color: var(--secondary-color);
+  fill: var(--secondary-color);
   background-color: var(--highlight-color);
   line-height: 1.87;
   font-style: normal;
@@ -744,25 +743,11 @@ ul {
   height: 30px;
 }
 
-/* .close-icon {
-  fill: #000000;
-  padding: 5px;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition-property: fill, background-color;
-  box-sizing: border-box;
-  width: 24px;
-  height: 24px;
-} */
-
 .close-button:hover,
 .close-button:focus,
 .close-icon:hover,
-.close-icon:focus 
- { background-color: var(--highlight-color);
+.close-icon:focus {
+  background-color: var(--highlight-color);
   fill: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -808,12 +793,15 @@ textarea:focus {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
+  transition-property: fill, border-color;
 }
 
 .input-box:focus-within,
 .modal-textarea:focus-within {
   border-color: #2196f3;
   fill: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-modal {
@@ -868,7 +856,14 @@ textarea {
   letter-spacing: 0.06em;
   text-align: center;
   color: #ffffff;
-  /* margin-top: 40px; */
+  transition-property: color;
+}
+
+.modal-buttom:focus,
+.modal-buttom:hover {
+  color: var(--secondary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-agreement {
@@ -939,8 +934,7 @@ textarea {
   top: 0;
   left: 0;
   fill: transparent;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, background-color, color;
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #212121;
@@ -954,6 +948,8 @@ textarea {
   background: #2196f3;
   border-radius: 2px;
   fill: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-icon::after {
