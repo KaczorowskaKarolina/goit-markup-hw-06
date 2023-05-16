@@ -792,9 +792,9 @@ ul {
 }
 
 input {
-  padding-top: 12px;
-  padding-left: 42px;
   box-sizing: border-box;
+  width: 100%;
+  padding: 12px 1px 12px 42px;
 }
 
 input,
@@ -942,9 +942,8 @@ textarea {
 }
 
 .checkbox_input {
-  width: 16px;
-  height: 15px;
   display: flex;
+  margin: 0px;
 }
 
 .checkbox-icon {
