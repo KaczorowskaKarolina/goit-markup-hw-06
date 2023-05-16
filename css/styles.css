@@ -568,7 +568,7 @@ ul {
   font-style: normal;
   font-size: 14px;
   font-weight: 700;
-  padding: 6px 0px 20px 70px;
+  padding: 10px 0px 20px 70px;
   margin: 0px;
 }
 
@@ -612,7 +612,7 @@ ul {
   font-style: normal;
   font-size: 14px;
   font-weight: 700;
-  padding: 6px 0px 20px 77px;
+  padding: 10px 0px 20px 77px;
   margin: 0px;
 }
 
@@ -701,7 +701,6 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-
 
 /*    OKNO MODALNE    */
 
@@ -922,7 +921,6 @@ textarea {
 *,
 *::before,
 *::after {
-  margin: 0;
   padding: 0;
   border: 0;
 }
