@@ -228,6 +228,7 @@ nav {
   border-style: none;
   padding: 10px 41px 10px 42px;
   transition-property: color, background-color;
+  margin-top: 40px;
 }
 
 .advantages {
@@ -327,6 +328,23 @@ nav {
   font-style: normal;
   font-weight: 700;
   transition-property: color;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.web-footer {
+  font-family: Raleway;
+  color: var(--highlight-color);
+  font-size: 26px;
+  font-style: bold;
+  text-decoration: none;
+  line-height: 1.19;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  transition-property: color;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .footer-address {
@@ -338,6 +356,7 @@ nav {
   letter-spacing: 0.03em;
   line-height: 1.71;
   transition-property: color;
+  margin-top: 20px;
 }
 
 .footer-address:hover,
@@ -474,8 +493,9 @@ ul {
 
 .icon-container {
   margin: 16px 0px 30px 0px;
-  justify-content: space-evenly;
+  justify-content: center;
   display: flex;
+  gap: 10px;
 }
 
 .icon-social-media {
@@ -559,8 +579,9 @@ ul {
   display: flex;
 }
 
-.a-footer {
+.footer-logo {
   padding: 25px 0px 25px 0px;
+  text-decoration: none;
 }
 
 .icon-join-us {
@@ -601,6 +622,7 @@ ul {
   justify-content: center;
   border-color: rgba(255, 255, 255, 0.3);
   background-color: #2f303a;
+  color: var(--highlight-color);
   margin-left: 77px;
   width: 358px;
   height: 50px;
@@ -643,42 +665,43 @@ ul {
   position: relative;
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  background: var(--highlight-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-left: 12px;
   border: none;
-}
+  cursor: pointer;
 
-.p-button-sign-in {
-  display: flex;
   color: #ffffff;
   fill: #ffffff;
-  position: relative;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  margin: 10px 24px 10px 42px;
+  padding: 10px 24px 10px 42px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   transition-property: fill, color, background-color;
 }
 
-.p-button-sign-in:hover,
-.p-button-sign-in:focus {
+.button-sign-in:focus,
+.button-sign-in:hover {
   color: var(--secondary-color);
   fill: var(--secondary-color);
-  background-color: var(--highlight-color);
-  line-height: 1.87;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.06em;
-  margin: 10px 24px 10px 42px;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background: var(--highlight-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  border: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
+
 
 /*    OKNO MODALNE    */
 
@@ -844,10 +867,11 @@ textarea {
   position: relative;
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  background: var(--highlight-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 
   font-family: Roboto;
   font-size: 16px;
