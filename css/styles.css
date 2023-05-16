@@ -897,6 +897,7 @@ textarea {
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--secondary-color);
+  margin-bottom: 0px;
 }
 
 .modal-agreement-1 {
@@ -938,6 +939,7 @@ textarea {
   margin-right: 7px;
   width: 16px;
   height: 15px;
+  margin-top: 13px;
 }
 
 .checkbox_input {
