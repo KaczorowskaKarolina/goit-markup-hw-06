@@ -226,11 +226,11 @@
       </div>
     </main>
 
-    <footer class="footer-box">
+     <footer class="footer-box">
       <div class="cointainer">
         <div>
-          <a class="a-footer" href="./"
-            ><span class="web">Web</span><span class="studio-footer">Studio</span></a
+          <a class="footer-logo" href="./"
+            ><span class="web-footer">Web</span><span class="studio-footer">Studio</span></a
           >
           <address>
             <ul>
@@ -279,18 +279,15 @@
             ></a>
           </div>
         </div>
-        
         <div>
-          
           <p class="submit">ZAPISZ SIĘ DO NEWSLETTERA</p>
-          <form name="submit-form" novalidate class="modal-form">
-            <input class="footer-input" type="email" name="email" placeholder="E-mail" required />
+          <form class="modal-form" name="submit-form" novalidate>
+            <input class="footer-input" type="email" name="email" placeholder="E-mail" required
+            pattern="[a-z0-9._%+-]+@[pa-z0-9.-]+\.[a-z]{2-4}$"" />
             <button class="button-sign-in" type="sumbit">
-              <div class="p-button-sign-in">
-                Zapisz się<svg width="24" height="24" viewBox="0 0 32 32">
-                  <use href="./images/icons.svg#icon-icon-send-1"></use>
-                </svg>
-              </div>
+              Zapisz się<svg width="24" height="24" viewBox="0 0 32 32">
+                <use href="./images/icons.svg#icon-icon-send-1"></use>
+              </svg>
             </button>
           </form>
         </div>
